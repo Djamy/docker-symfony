@@ -28,6 +28,9 @@ RUN apk add --update \
     php7-simplexml \
     php7-xdebug \
     make \
+    git \
+    php7-zip \
+    php7-xdebug \
     curl
 
 RUN rm -rf /var/cache/apk/* && rm -rf /tmp/* && \
