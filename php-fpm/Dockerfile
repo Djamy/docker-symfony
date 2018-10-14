@@ -31,7 +31,11 @@ RUN apk add --update \
     git \
     php7-zip \
     php7-xdebug \
-    curl
+    curl \
+    php7-soap \
+    php7-xmlreader \
+    php7-xmlwriter \
+    php7-zip
 
 RUN rm -rf /var/cache/apk/* && rm -rf /tmp/* && \
     curl --insecure https://getcomposer.org/composer.phar -o /usr/bin/composer && chmod +x /usr/bin/composer
